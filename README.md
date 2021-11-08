@@ -216,7 +216,7 @@ To clear the Redis cache, use our `clear_cache` management command:
 Note that by default Heroku's Redis is set up with a `maxmemory-policy` of `noeviction` which will generate OOM (Out Of Memory) errors when the memory limit is reached. This [can be changed](https://devcenter.heroku.com/articles/heroku-redis#maxmemory-policy):
 
     $ heroku redis:info
-    === redis-fishery-12345 (HEROKU_REDIS_NAVY_TLS_URL, ...    
+    === redis-fishery-12345 (HEROKU_REDIS_NAVY_TLS_URL, ...
 
 Then use that Redis name like:
 
@@ -286,3 +286,4 @@ It might take some time. See `encyclopedia/management/commands/fetch_wikipedia.p
 ## Other notes
 
 Lots of site-wide stuff is in the `pepysdiary/common/` app. Including the CSS, JS and images in `pepysdiary/common/static/`.
+
